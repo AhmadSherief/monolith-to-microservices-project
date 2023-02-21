@@ -16,7 +16,7 @@ workflows:
           tag: "latest"
       - docker/publish:
           dockerfile: udagram-frontend/Dockerfile
-          image: ahmadsherief/udagram-frontend:local
+          image: ahmadsherief/udagram-frontend
           tag: "latest"
       - docker/publish:
           dockerfile: udagram-reverseproxy/Dockerfile
