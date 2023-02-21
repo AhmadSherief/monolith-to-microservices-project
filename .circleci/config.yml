@@ -10,19 +10,15 @@ workflows:
           dockerfile: udagram-api-user/Dockerfile
           image: ahmadsherief/udagram-api-user
           tag: "latest"
-          path: udagram-api-user
       - docker/publish:
           dockerfile: udagram-api-feed/Dockerfile
           image: ahmadsherief/udagram-api-feed
           tag: "latest"
-          path: udagram-api-feed
       - docker/publish:
           dockerfile: udagram-frontend/Dockerfile
-          image: ahmadsherief/udagram-frontend:local
+          image: ahmadsherief/udagram-frontend
           tag: "latest"
-          path: udagram-frontend
       - docker/publish:
           dockerfile: udagram-reverseproxy/Dockerfile
           image: ahmadsherief/reverseproxy
           tag: "latest"
-          path: udagram-reverseproxy
