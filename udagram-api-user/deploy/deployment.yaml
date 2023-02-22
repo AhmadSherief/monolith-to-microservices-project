@@ -19,6 +19,13 @@ spec:
           image: ahmadsherief/udagram-api-user
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu: "250m"
+            limits:
+              memory: "3Gi"
+              cpu: "1000m"
           envFrom:
             - configMapRef:
                 name: env-configmap

@@ -42,6 +42,3 @@ venv/
 !.elasticbeanstalk/*.global.yml
 set_env.sh
 udagram-keypair.pem
-aws-secret.yaml
-env-secret.yaml
-env-configmap.yaml
